@@ -664,12 +664,14 @@ footer {
   }
 
   h1 {
-    font-size: clamp(30px, 12vw, 42px);
-    line-height: 1.05;
+    font-size: clamp(28px, 10vw, 38px);
+    line-height: 1.08;
+    overflow-wrap: break-word;
   }
 
   .hero-text {
     font-size: 16px;
+    overflow-wrap: break-word;
   }
 
   .actions,
