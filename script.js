@@ -1,5 +1,22 @@
 const filterButtons = document.querySelectorAll(".filter-button");
 const zoneBlocks = document.querySelectorAll(".zone-block");
+const header = document.querySelector("header");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelectorAll("nav a");
+
+if (header && menuToggle) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = header.classList.toggle("nav-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      header.classList.remove("nav-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+}
 
 const zoneLabels = {
   "zona-leste": "Zona Leste",
