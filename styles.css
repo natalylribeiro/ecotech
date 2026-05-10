@@ -541,6 +541,10 @@ footer {
 }
 
 @media (max-width: 1100px) {
+  .qr-access {
+    display: none;
+  }
+
   .features {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -684,8 +688,11 @@ footer {
     width: 100%;
   }
 
+}
+
+@media (hover: none) and (pointer: coarse) {
   .qr-access {
-    display: none;
+    display: none !important;
   }
 }
 
