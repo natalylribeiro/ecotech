@@ -685,12 +685,7 @@ footer {
   }
 
   .qr-access {
-    grid-template-columns: 1fr;
-    padding: 44px 6%;
-  }
-
-  .qr-frame {
-    justify-self: start;
+    display: none;
   }
 }
 
